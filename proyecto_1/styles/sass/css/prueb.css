@@ -1,0 +1,59 @@
+/***** MOBILE VERSION ******/
+/*****  ******/
+/*****  ******/
+/***** ******/
+/*****  ******/
+/***** DESKTOP VERSION ******/
+@media screen and (min-width: 1150px) {
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  aside #phone-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 457.6px;
+    height: 660px;
+    margin-top: -1%;
+    margin-left: 13.9%;
+  }
+  aside #phone-photo img {
+    width: auto;
+  }
+  aside article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    margin-top: 10.5%;
+  }
+  aside article h1 {
+    font-size: 48px;
+    width: 530px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  aside article p {
+    font-size: 16px;
+    width: 462px;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=prueb.css.map */

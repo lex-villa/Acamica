@@ -1,0 +1,214 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  -ms-grid-rows: 10vh 100% 5vh;
+      grid-template-rows: 10vh 100% 5vh;
+}
+
+/***** BURGUER MENU *****/
+header {
+  background-color: lightskyblue;
+  grid-column: span 2;
+}
+
+header nav ul {
+  max-height: 0;
+  margin-top: 10vh;
+  -webkit-transition: max-height .1s ease-out;
+  transition: max-height .1s ease-out;
+  list-style: none;
+  background: lightskyblue;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  z-index: 10;
+}
+
+header nav ul li {
+  height: 42px;
+}
+
+header nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  font-family: inherit;
+}
+
+header nav ul li a:hover {
+  background-color: #5dc1ff;
+}
+
+header .burguer-icon {
+  position: relative;
+  padding: 18px 10px;
+  top: 9.5px;
+  right: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+header .burguer-icon .burguer-nav-icon {
+  display: block;
+  background: black;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+header .burguer-icon .burguer-nav-icon:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+header .burguer-icon .burguer-nav-icon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+header .burguer-btn {
+  display: none;
+}
+
+header .burguer-btn:checked ~ #navbar ul {
+  max-height: 900px;
+}
+
+header .burguer-btn:checked ~ .burguer-icon .burguer-nav-icon {
+  background: transparent;
+}
+
+header .burguer-btn:checked ~ .burguer-icon .burguer-nav-icon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+header .burguer-btn:checked ~ .burguer-icon .burguer-nav-icon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+/***** END BURGUER MENU *****/
+aside {
+  background-color: whitesmoke;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+aside article {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40px auto;
+      grid-template-rows: 40px auto;
+  margin-left: 2%;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-gap: 10px;
+}
+
+main article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+}
+
+main article figure {
+  grid-area: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+main article figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: lightslategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column: span 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+footer p {
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

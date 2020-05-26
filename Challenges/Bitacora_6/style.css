@@ -1,0 +1,23 @@
+#cuadrado {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#cuadrado:hover {
+    -webkit-animation: run 2s infinite linear;
+}
+
+
+@keyframes run {
+    from {
+      transform: translateX(0) rotate(0deg);
+      filter: blur(10px);
+    }
+    to {
+      transform: translateX(200%) rotate(360deg);
+      filter: blur(0px);
+    }
+  }

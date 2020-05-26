@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Form</h1>
+        <p>Este es un form</p>
+    </header>
+    <main>
+        <form action="#" method="#">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" name="name" class="inputStyle" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="secondName">Apellido</label>
+                <input id="secondName" type="text" name="secondName" class="inputStyle"
+                    placeholder="Ingresa tu apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" name="mail" class="inputStyle" placeholder="Ingresa tu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Selecciona de que país eres</label>
+                <select id="country" name="country" required>
+                    <option disabled selected value>País</option>
+                    <option value="mexico">México</option>
+                    <option value="inglaterra">Inglaterra</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="francia">Francia</option>
+                    <option value="españa">España</option>
+                    <option value="alemania">Alemania</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-group">
+                <p>¿A qué carrera deseas inscribirte?</p>
+                <label><input type="checkbox" name="path" value="UX/UI" class="input-checkbox">UX/UI</label>
+                <label><input type="checkbox" name="path" value="data Science" class="input-checkbox">Data
+                    Science</label>
+                <label><input type="checkbox" name="path" value="Dev Web Full Stack" class="input-checkbox">Desarrollo
+                    Web Full Stack</label>
+                <label><input type="checkbox" name="path" value="frontEnd avanzado" class="input-checkbox">FrontEnd
+                    Avanzado</label>
+            </div>
+            <div class="form-group">
+                <p>¿En qué modalidad quieres cursar tu carrera?</p>
+                <label><input type="radio" name="modalidad" value="presencial" class="input-radio"
+                        required>Presencial</label>
+                <label><input type="radio" name="modalidad" value="online" class="input-radio">Online</label>
+            </div>
+            <div class="formgroup">
+                <p>¿Estás trabajando actualmente?</p>
+                <label><input type="radio" name="trabajando" value="si" class="input-radio">Sí</label>
+                <label><input type="radio" name="trabajando" value="no" class="input-radio">No</label>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" class="inputStyle" type="tel" name="tel"
+                    pattern="^[0-9]*$" required placeholder="Déjame tu número de teléfono">
+            </div>
+            <div class="form-group">
+                <p>Comentarios</p>
+                <textarea id="descripcion" name="descripcionPersonal" cols="30" rows="7"
+                    placeholder="Cuéntanos sobre ti (no más de 300 caracteres...)" maxlength="300"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit">submit</button>
+                <input id="reset" type="reset">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

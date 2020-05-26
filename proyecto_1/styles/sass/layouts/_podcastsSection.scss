@@ -1,0 +1,89 @@
+/***** MOBILE VERSION ******/
+
+/*** Podcasts section styles ***/
+
+#podcasts {
+  height: fit-content;
+
+  transform: skew(0deg, -6deg);
+
+  margin-top: 40px;
+
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+
+  padding-bottom: 120px;
+
+  h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #ffffff;
+
+    margin-bottom: 18px;
+    margin-left: 5%;
+    
+
+    transform: skew(0deg, 6deg);
+
+    padding-top: 50px;
+
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+
+  #gallery-podcasts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 225px;
+    grid-gap: 18px;
+
+    margin-top: 100px;
+    margin: 9px;
+
+    transform: skew(0deg, 6deg);
+  }
+}
+
+/*** END Podcasts section styles ***/
+
+/*****  ******/
+
+/*****  ******/
+
+/*****  ******/
+
+/*****  ******/
+
+/***** DESKTOP VERSION ******/
+
+/*** Cover-page section styles ***/
+
+@media screen and (min-width: 837px) {
+  #podcasts {
+    margin-top: 70px;
+
+    padding-bottom: 15%;
+
+    h1 {
+      font-size: 48px;
+
+      margin-left: 12%;
+      margin-bottom: 0;
+
+      padding-top: 8%;
+    }
+
+    #gallery-podcasts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(250px, 584px));
+      grid-auto-rows: 232px;
+      grid-column-gap: 5%;
+      grid-row-gap: 13%;
+
+      margin-top: 2%;
+      margin-left: 6.9%;
+      margin-right: 6.9%;
+
+    }
+  }
+}
