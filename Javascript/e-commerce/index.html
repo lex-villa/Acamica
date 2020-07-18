@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/reset.css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+
+    <!-- Template para los productos a vender -->
+    <script id="script-template-id" type="text/x-handlebars-template">
+        {{#each values}}
+        <div id="product-card-id" class="product-card">
+            <figure>
+                <img src="{{srcImg}}" alt="product image" id="price-id">
+            </figure>
+            <p id="product-name-id" class="product-name">{{productName}}</p>
+            <p id="product-price-id" class="product-price">$ {{productPrice}}</p>
+            <button id="btn-add-car-id" class="btn-add-car">Agregar carrito</button>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- Template para los productos que se agregan al carrito de compras -->
+    <script id="script-template-shoppyCar-id" type="text/x-handlebars-template">
+        {{#each values2}}
+        <div id="product-card-shoppyCar-id" class="product-card-shoppyCar">
+            <figure>
+                <img src="{{srcImg}}" alt="product image" id="img-shoppyCar-id">
+            </figure>
+            <p id="product-name-shoppyCar-id" class="product-name-shoppyCar">{{productName}}</p>
+            <p id="product-price-shoppyCar-id" class="product-price-shoppyCar">$ {{productPrice}}</p>
+            <button id="btn-cancel-car-shoppyCar-id" class="btn-add-car-shoppyCar">X</button>
+        </div>
+        {{/each}}
+    </script>
+
+    <title>Tienda Cyberpunk</title>
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img src="images/shopping-cart.png" alt="shopping car icon" id="shop-car">
+        </figure>
+        <span id="products-counter">0</span>
+
+        <section id="shop-list">
+            <section id="client-product-list">
+                <!-- Aqui va el template para los productos agregados al carrito de compras -->
+            </section>
+            <p id="total-price">Total: $<span id="total-price-digit">0</span></p>
+            <button id="btn-pagar-total">Pagar</button>
+        </section>
+    </header>
+
+
+    <section class="carousel-container">
+        <section id="products-container" class="carousel-slide">
+            <!-- Aqui va el template para los productos disponibles para comprar -->
+        </section>
+    </section>
+
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+
+    
+
+    <script src="./scripts/app.js" type="module"></script>
+    <script src="./scripts/carousel.js" type="module"></script>
+    
+</body>
+
+</html>

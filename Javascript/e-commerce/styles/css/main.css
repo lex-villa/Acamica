@@ -1,0 +1,139 @@
+header {
+  border: 1px solid black;
+  height: 10vh;
+  /**/
+}
+
+header figure {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+header figure img {
+  width: 100%;
+  height: 100%;
+}
+
+header #products-counter {
+  font-size: 30px;
+  margin-left: 80px;
+  position: absolute;
+  top: 14px;
+}
+
+header #shop-list {
+  width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 10vh;
+  z-index: 5;
+  border: 1px solid red;
+  background-color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+header #shop-list .product-card-shoppyCar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+header #shop-list .product-card-shoppyCar figure {
+  width: 180px;
+  height: 100px;
+}
+
+header #shop-list .product-card-shoppyCar figure img {
+  width: 100%;
+  height: 100%;
+}
+
+header #shop-list .product-name-shoppyCar {
+  font-size: 20px;
+}
+
+header #shop-list .product-price-shoppyCar {
+  font-size: 20px;
+}
+
+header #total-price {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+/**/
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+
+.product-card figure {
+  width: 250px;
+  height: 150px;
+}
+
+.product-card figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-card .product-name {
+  font-size: 30px;
+}
+
+.product-card .product-price {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */
